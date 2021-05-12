@@ -1,0 +1,8 @@
+node inspect index.js
+node inspect-brk index.js // Iniciar debugging parando na primeira linha
+node --inspect-brk index.js // Iniciar debugging sem parar na primeira linha
+
+curl "localhost:3000/?salary=1000&discount=15"
+
+- list(100) // listar 100 linhas
+- sb(1) ou createBreakpoint (1) // Criar um breakpoint na linha 1
