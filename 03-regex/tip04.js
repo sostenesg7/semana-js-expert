@@ -1,0 +1,17 @@
+const data = `_id,age,name,company
+609c559c8ffbcf9561ababed,39,Dorthy Marsh,PYRAMI
+609c559c71f75b6883343755,23,Jacobs Bernard,PROSURE
+609c559cf27faec93cdceda3,22,Caldwell Glover,NETILITY
+609c559c61a81a9da86df720,23,Hendrix Witt,PHARMEX
+609c559c24865b16cd91ed88,21,Millicent Wolfe,EQUITAX
+609c559c65c21561ba2d8d24,24,Combs Chan,VETRON
+609c559cab861e0d7e21e81a,35,Boyle Brady,GINKLE
+609c559cdf8afc378439f955,25,Alma Duke,GEEKETRON
+609c559c4faa6faaa8393de5,22,Rene Randolph,BRISTO
+609c559cd1ea4c26578ae2b8,34,Kristen Wade,BUZZWORKS`
+
+const regex = /^(\w.*),(\d{2}),(\w*.\s\w+),(\w+)$/gm
+
+const dataJSON = regex.exec(data);
+
+console.log(JSON.stringify(dataJSON, null, 2));
